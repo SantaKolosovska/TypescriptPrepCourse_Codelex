@@ -1,14 +1,36 @@
 export {};
 
-function add() {}
+function add(a: number, b: number): number {
+    return a + b;
+}
 
-function subtract() {}
+function subtract(a: number, b: number): number {
+    return a - b;
+}
 
-function sum() {}
+function sum(numArray: number[]): number {
+    var sum: number = 0;
+    for (var i = 0; i < numArray.length; i++) {
+        sum += numArray[i];
+    }
+    return sum;
+}
 
-function multiply() {}
+function multiply(numArray: number[]): number {
+    var multiplication = 1;
+    for (var i = 0; i < numArray.length; i++) {
+        multiplication *= numArray[i];
+    }
+    return multiplication;
+}
 
-function power() {}
+function power(a:number, b: number): number {
+    var result: number = 1;
+    for (var i = 0; i < b; i++) {
+        result *= a;
+    }
+    return result
+}
 
 console.log(add(1, 2)); // Expected output: 3
 console.log(subtract(1, 2)); // Expected output: -1

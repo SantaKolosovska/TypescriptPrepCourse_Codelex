@@ -1,3 +1,5 @@
+import { split } from "ts-node";
+
 export {};
 
 /**
@@ -15,4 +17,10 @@ export {};
  *  - https://github.com/codelex-io/noob-exercises/tree/main/00-array-functions
  */
 
+
+function stringToArray(sArr: string[]) {
+    return sArr[0].split(" ");
+} 
+
 console.log(stringToArray(["John Doe"])); // Expected output: ['John', 'Doe']
+

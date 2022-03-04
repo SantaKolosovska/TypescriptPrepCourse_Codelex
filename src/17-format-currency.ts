@@ -9,7 +9,16 @@ export {};
  */
 
 // You are allowed to change only this function
-function formatCurrency() {}
+function formatCurrency(priceUnformatted: number): string {
+  var priceFormatted = new Intl.NumberFormat(
+    'en-GB', // BCP 47 language tag 
+    { 
+        style: 'currency', // we want a currency
+        currency: 'GBP' // ISO 4217 currency code
+    }
+).format(priceUnformatted);
+return priceFormatted;
+}
 
 function calculateSalesTax(price: number) {
   return price * 0.21;

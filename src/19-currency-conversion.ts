@@ -15,9 +15,18 @@ export {};
  */
 
 // You are allowed to change this function
-function convertToUSD(price) {}
+function convertToUSD(price: number): number {
+    return +(addOnePercent(price)*1.4).toFixed(2);
+}
+
 // You are allowed to change this function
-function convertToBRL(price) {}
+function convertToBRL(price: number): number {
+    return +(addOnePercent(price)*6.87).toFixed(2);
+}
+
+function addOnePercent(price: number): number {
+    return price + 0.01*price;
+}
 
 const product = "You don't know JS";
 const price = 12.5;
