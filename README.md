@@ -1,4 +1,7 @@
-# Warm-Up Exercises
+Learning some typescript.
+
+## ------ Original README ------
+## Warm-Up Exercises
 
 Congratulations you are almost there!
 
