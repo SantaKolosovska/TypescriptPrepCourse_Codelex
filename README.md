@@ -1,4 +1,9 @@
-# Warm-Up Exercises
+Learning some Typescript in a 4 day introductory course offered by Codelex (https://www.codelex.io/).  
+&nbsp;
+
+
+## ------------------ Original README ------------------
+## Warm-Up Exercises
 
 Congratulations you are almost there!
 
