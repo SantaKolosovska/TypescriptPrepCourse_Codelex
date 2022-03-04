@@ -14,17 +14,9 @@ export {};
 
 // You are allowed to change only this function
 function calculateSalesTax(price: number) {
-return +(price * 0.21).toFixed(2);
+return price * 0.21;
 }
 
-// function calculateSalesTax2(price: number) {
-//     return price * 21 /100
-//     }
-
-// function calculateSalesTax(price: number): number {
-//     let tax = price*0.21;
-//     return Math.round(tax*100)/100;
-//     }
 
 const product = "You don't know JS";
 const price = 19.99;
@@ -32,8 +24,8 @@ const salesTax = calculateSalesTax(price);
 
 console.log("Product: " + product);
 console.log("Price: £" + price);
-console.log("Sales tax: £" + salesTax);
-console.log("Total: £" + (price + salesTax));
+console.log("Sales tax: £" + salesTax.toFixed(2));
+console.log("Total: £" + (price + salesTax).toFixed(2));
 
 /* Expected output:
 
